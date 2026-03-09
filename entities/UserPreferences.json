@@ -1,0 +1,38 @@
+{
+  "name": "UserPreferences",
+  "type": "object",
+  "properties": {
+    "display_name": {
+      "type": "string",
+      "description": "How the user wants to be called"
+    },
+    "stress_style": {
+      "type": "string",
+      "description": "How user usually deals with stress"
+    },
+    "reason_here": {
+      "type": "string",
+      "description": "What brings the user here"
+    },
+    "preference": {
+      "type": "string",
+      "enum": [
+        "listening",
+        "reflection",
+        "problem-solving"
+      ],
+      "description": "Preferred conversation style"
+    },
+    "onboarding_complete": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether onboarding is complete"
+    },
+    "dark_mode": {
+      "type": "boolean",
+      "default": false,
+      "description": "Dark mode preference"
+    }
+  },
+  "required": []
+}

@@ -1,0 +1,33 @@
+{
+  "name": "MoodCheckIn",
+  "type": "object",
+  "properties": {
+    "mood": {
+      "type": "string",
+      "enum": [
+        "calm",
+        "overwhelmed",
+        "motivated",
+        "drained",
+        "uncertain",
+        "anxious",
+        "hopeful",
+        "sad",
+        "grateful",
+        "frustrated"
+      ],
+      "description": "The mood state selected"
+    },
+    "energy_level": {
+      "type": "number",
+      "description": "Energy level 1-5"
+    },
+    "note": {
+      "type": "string",
+      "description": "Optional short note about the mood"
+    }
+  },
+  "required": [
+    "mood"
+  ]
+}

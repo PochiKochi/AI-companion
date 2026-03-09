@@ -1,0 +1,43 @@
+{
+  "name": "Conversation",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Auto-generated conversation title/summary"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "normal",
+        "reflection",
+        "silent",
+        "perspective"
+      ],
+      "default": "normal",
+      "description": "Conversation mode"
+    },
+    "themes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Emotional themes detected in this conversation"
+    },
+    "summary": {
+      "type": "string",
+      "description": "AI-generated conversation summary"
+    },
+    "mood_start": {
+      "type": "string",
+      "description": "Mood at start of conversation"
+    },
+    "mood_end": {
+      "type": "string",
+      "description": "Mood at end of conversation"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}
